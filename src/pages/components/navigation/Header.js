@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className=''>
         <div className='logo content'>
-          <h2>Logo</h2>
+          <img src="/img/Logo_V1.png" alt="" />
         </div>
         <div className='navbar content'>
           <ul>
