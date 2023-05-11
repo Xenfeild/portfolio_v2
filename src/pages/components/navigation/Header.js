@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Header() {
@@ -8,8 +9,12 @@ export default function Header() {
         </div>
         <div className='navbar content'>
           <ul>
-            <li>Home</li>
-            <li>Contact</li>
+            <Link href="/">
+              <li>Home</li>
+            </Link>
+            <Link href="/contact">
+              <li>Contact</li>
+            </Link>
           </ul>
         </div>
     </header>

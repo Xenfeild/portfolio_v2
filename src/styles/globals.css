@@ -11,6 +11,9 @@
 .content{
   margin: clamp(1rem,2%, 2rem) clamp(1rem,5%,10rem);
 }
+.content2{
+  margin: 1rem 10%;
+}
 
 header {
   display: flex;
@@ -134,7 +137,6 @@ footer h3{
   margin: 1rem ;
   margin-top: 3rem;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -183,4 +185,28 @@ input{
 
 #message{
   height: 300px;
+}
+
+.home{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slugMain h2{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #939393;
+}
+#slugCard{
+  margin: 1rem;
+}
+
+#slugCard img{
+  height: 200px;
+}
+
+.slugMain{
+    background-color: #e0e0e0;
 }

@@ -1,6 +1,8 @@
 import React from 'react'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import { createClient } from 'contentful';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+
 
 const client = createClient({
   space:process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
@@ -8,24 +10,24 @@ const client = createClient({
 });
 
 
-//2.generere ou recupperrer ts les slug de mes articles
+//2.gernerated or retrieve all of slugs of my articles
 
 export  async function getStaticPaths() {
 //a-recupere les posts ds le contentful
 const res = await client.getEntries({
-  content_type: "porfolio",
+  content_type: "portfolio",
  
 
 });
 
-//b- recuperes les slug des posts
+//b- retrieve posts slugs
 const slugs = res.items.map((slug) => {
   return {
     params: { slug: slug.fields.slug },
   };
 });
 
-//c-renvoie tous les slugs ds path (chemin //route)
+
 return {
   paths: slugs,
   fallback: false // tous les slug qui ne st pas ds mon path => page 404
@@ -33,17 +35,17 @@ return {
 }
 
 
-// 3- recuperre data du post en fonction du slug
+
 export async function getStaticProps({ params }) {
   console.log("params:", params);
-  //A.Recupere la data lié au slug
+
 
   const res = await client.getEntries({
     content_type: "portfolio",
     "fields.slug": params.slug
   });
 
-  // b-je stock la data du post ds une variables
+
   const post = res.items;
 
   return {
@@ -53,11 +55,31 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default function index() {
+
+
+
+export default function index({post}) {
+  console.log("post:", post)
+  const { title, hero, technicalSheet, carousel } = post.fields;
   return (
     <div>
         <Layout>
-        index
+          <div className='slug'>
+            <img
+            src={hero.fields.file.url}
+            alt={title}
+            />
+            <div className='slugMain'>
+              <div className='content2'>
+                <h2>{post.fields.title}</h2>
+                {documentToReactComponents(technicalSheet)}
+              </div>
+            </div>
+            <div className="carousel carousel-end rounded-box">
+              <div className="carousel-item">
+              </div> 
+            </div>
+          </div>
         </Layout>
     </div>
   )
