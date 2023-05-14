@@ -21,7 +21,7 @@ export default function Home({posts}) {
                       {/* cards */}
         {
           posts.map((post)=>(
-            <Link href={`/post/${post.fields.slug}`} id="slugCard">
+            <Link href={`/post/${post.fields.slug}`} >
             <Card 
             key={post.sys.id} 
             post={post}

@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <h3>Contact</h3>
-                    <p>0770041366</p>
+                    <p>0606060606</p>
                 </div>
                 </div>
             </div>

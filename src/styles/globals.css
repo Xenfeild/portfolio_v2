@@ -21,11 +21,16 @@ header {
   /* background-color: #505050; */
   color: #000;
   align-items: center;
+  position: sticky;
+  height: 100px;
+  top: 0;
+  background-color: #fff;
 }
 
 .navbar ul {
   display: flex;
   font-size: 1.5rem;
+  align-items: center;
   
 }
 .navbar ul li {
@@ -194,19 +199,94 @@ input{
     flex-wrap: wrap;
 }
 
-.slugMain h2{
-  font-weight: bold;
-  font-size: 2rem;
-  color: #939393;
-}
-#slugCard{
+.card {
+  display: flex;
+  height: 350px;
+  flex-direction: column;
   margin: 1rem;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
 }
 
-#slugCard img{
-  height: 200px;
+.card:hover {
+  transform: translateY(-15px);
 }
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+figure{
+  position: relative;
+}
+
+/* figcaption{
+  position:;
+  
+} */
+
+figcaption:hover {
+  transform: scale(1.1);
+
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .slugMain{
-    background-color: #e0e0e0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
+
+.slug img{
+  width: 100%;
+  object-fit: cover;
+  height: 750px;
+}
+
+.array{
+  color: #939393;
+}
+
+.array span{
+  color: #676767;
+}
+
+.slugLeft{
+  max-width: 700px;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+}
+
+.slugLeft h2{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  padding: .1rem;
+}
+
+

@@ -5,9 +5,9 @@ export default function Card({post}) {
     // console.log(featuredImage.fields)
     const urlImg = hero.fields.file.url
   return (
-    <div className='card'>
-            <img src={urlImg} alt={title} className='max-w-xs cardImg' />
-            <p className='font-bold'>{title}</p>
-    </div>
+    <figure className='card'>
+          <img src={urlImg} alt={title} className='max-w-xs cardImg' />
+          <figcaption className='font-bold'>{title}</figcaption>
+    </figure>
   )
 }

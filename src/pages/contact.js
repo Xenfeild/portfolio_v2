@@ -11,15 +11,14 @@ export default function contact() {
                 </div>
                 <div className='content contactMain '>
                     <div className='contactLeft'>
-                        <h2>Osez</h2>
+                        <h2>Contact</h2>
                         <p>Vous n'êtes <span>pas encore client</span> et vous rêvez d'un <span>site web créatif et responsive?</span>
                         </p>
                         <p>Même <span>confinées,</span> je vous <span>répondond rapidement !</span></p>
                         <br />
                         <p><span>10 rue jacques brel 27940 Aubvoye</span></p>
                         <div className='contactButton'>
-                            <button>Recrutement</button>
-                            <button>Fournisseurs</button>
+                            <button>Envoyer</button>
                         </div>
                     </div>
                     <div className='contactForm'>

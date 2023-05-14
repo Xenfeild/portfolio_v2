@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function Header() {
   return (
@@ -13,7 +14,7 @@ export default function Header() {
               <li>Home</li>
             </Link>
             <Link href="/contact">
-              <li>Contact</li>
+              <li><AiOutlineMail/></li>
             </Link>
           </ul>
         </div>
