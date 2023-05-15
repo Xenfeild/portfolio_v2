@@ -47,7 +47,7 @@ export async function getStaticProps() {
   const data = await client.getEntries({
     content_type: 'portfolio',
     order: "sys.createdAt",
-    limit: 2,
+    limit: 4,
   });
 
 
