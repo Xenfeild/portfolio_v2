@@ -13,6 +13,7 @@ export default function Header() {
             <Link href="/">
               <li>Home</li>
             </Link>
+              <li> | </li>
             <Link href="/contact">
               <li><AiOutlineMail/></li>
             </Link>

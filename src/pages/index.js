@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { Inter, Montserrat,  } from 'next/font/google'
-import Layout from './components/Layout';
+import Layout from '@/componenets/Layout';
 import { createClient } from 'contentful';
 import Link from 'next/link';
-import Card from './components/Card';
+import Card from '@/componenets/cards/Card';
 
 // const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat ({ weight: ["300","400", "500", "900"],
@@ -16,8 +16,11 @@ export default function Home({posts}) {
       className="">
         <Layout>
           <div className='hero'>
+            <div className='welcome'>
+              <h2 className=''>Portfolio Antonio Torres</h2>
+            </div>
           </div>
-          <div className='content home'>
+          <div className='home'>
                       {/* cards */}
         {
           posts.map((post)=>(

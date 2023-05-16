@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from './components/Layout'
+import Layout from '@/componenets/Layout'
 
 export default function contact() {
   return (
@@ -22,10 +22,14 @@ export default function contact() {
                         </div>
                     </div>
                     <div className='contactForm'>
-                        <input type="text" placeholder='Nom complet' />
-                        <input type="text" placeholder='Société' />
-                        <input type="email" placeholder='Email' />
-                        <input type="phone" placeholder='téléphone' />
+                        <div className="nameSociety">
+                            <input type="text" placeholder='Nom complet' />
+                            <input type="text" placeholder='Société' />
+                        </div>
+                        <div className="mailPhone">
+                            <input type="email" placeholder='Email' />
+                            <input type="phone" placeholder='téléphone' />
+                        </div>
                         <input type="text" placeholder='objet' />
                         <input type="textarea" placeholder='Message' id="message"/>
                     </div>

@@ -10,25 +10,28 @@ export default function Footer() {
                     <div className='logo'>
                         <img src="/img/Logo_V1_white-removebg.png" alt="" />
                     </div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolores ad eos ut incidunt sunt. Quidem, modi ullam? Minima laborum qui maiores inventore doloremque cumque dolore rerum maxime incidunt porro!</p>
+                    <p>Antonio Torres web develloper junior à votre service dans l'objectif de creer le site de vos rêves</p>
                     <div className='icons'>
                         <FaFacebookF/>
                         <FaLinkedin/>
                     </div>
                 </div>
+                <hr />
                 <div className='footerDescription'>
                     <h3>WEB DEVELLOPER</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a quis reprehenderit expedita doloribus recusandae voluptatem, sint vitae deserunt tempore dolorem soluta saepe dolorum autem modi natus. Perferendis, at neque?</p>
+                    <p>En formation à l'ESCCI, avec une expérience qui se forge au fur et à mesure</p>
                 </div>
+                <hr />
                 <div className='footerDescription'>
                     <h3>JE REPOND A VOS EN ENJEUX</h3>
-                    <p>Communication corporate</p>
+                    <p>Communication original</p>
+                    <p>Communication artistique</p>
                     <p>Communication interne</p>
-                    <p>Communication RSE</p>
                 </div>
+                <br />
                 <div>
                     <h3>Contact</h3>
-                    <p>0606060606</p>
+                    <p>0770041366</p>
                 </div>
                 </div>
             </div>

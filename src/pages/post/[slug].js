@@ -1,25 +1,22 @@
-import React, { useState } from 'react';
-import Layout from '../components/Layout';
+import React from 'react';
+import Layout from '@/componenets/Layout';
 import { createClient } from 'contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-
-// function 
 export default function Portfolio({ post }) {
-  const { title, hero, technicalSheet, carousel, customer, sector, services, challenges, webSite } = post.fields;
-  const [currentSlide, setCurrentSlide] = useState(0);
-
+  const { title, hero, technicalSheet, carousel, customer, stack, services, challenges, webSite, subtitle } = post.fields;
 
   return (
     <Layout>
       <div className='slug'>
         <img src={hero.fields.file.url} alt={title} />
-        <div className='slugMain content'>
+        <div className='slugMain '>
           <div className='slugLeft'>
             <h2>{title}</h2>
+            <h3>{subtitle}</h3>
             {documentToReactComponents(technicalSheet)}
           </div>
-          <div className='array'>
+          <div className='slugRight'>
             <div>
               <p>
                 <span>Client : </span>
@@ -29,8 +26,8 @@ export default function Portfolio({ post }) {
             </div>
             <div>
               <p>
-                <span>Secteur : </span>
-                {sector}
+                <span>Stack utilisé :     </span>    
+                {stack}
               </p>
               <hr />
             </div>
@@ -46,29 +43,20 @@ export default function Portfolio({ post }) {
                 <span>Enjeux : </span>
                 {challenges}
               </p>
-              <hr />
-            </div>
-            <div>
-              <p>
-                <span>Site Web : </span>
-                {webSite}
-              </p>
-              <hr />
             </div>
           </div>
         </div>
       </div>
-      <div className='carousel-container'>
-        <div className='carousel'>
-          {carousel.map((file, index) => (
-            <div
-              key={file.sys.id}
-              className={index === currentSlide ? 'slide active' : 'slide'}
-            >
-              <img src={file.fields.file.url} alt={file.fields.title} />
-            </div>
-          ))}
-        </div>
+      <div className='thumbnails'>
+        {carousel.map((file) => (
+          <a key={file.sys.id} 
+          href={file.fields.file.url} 
+          target='_blank' 
+          rel='noopener noreferrer'>
+            <img src={file.fields.file.url} 
+            alt={file.fields.title} />
+          </a>
+        ))}
       </div>
     </Layout>
   );
