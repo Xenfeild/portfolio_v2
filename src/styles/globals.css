@@ -11,14 +11,12 @@
 .content{
   margin: clamp(1rem,2%, 2rem) clamp(1rem,5%,10rem);
 }
-.content2{
-  margin: 1rem 10%;
-}
+
+/* header */
 
 header {
   display: flex;
   justify-content: space-between;
-  /* background-color: #505050; */
   color: #000;
   align-items: center;
   position: sticky;
@@ -46,6 +44,8 @@ header {
     width: 100%;
     height: 100%;
 }
+
+/* footer */
 
 footer{
   background-color: #1c1c1c;
@@ -76,6 +76,24 @@ footer{
   padding: .1rem;
 }
 
+footer h3{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footerDescription{
+  max-width: 392px;
+}
+.footerDescription1{
+  max-width: 392px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* main page */
+
 .hero{
   background-image: url(/img/pexels-photo-7172094.jpeg);
   background-size: cover;
@@ -93,7 +111,7 @@ footer{
   align-items: center;
 }
 
-.welcome h2{
+h1{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,14 +122,6 @@ footer{
 }
 
 
-
-h1{
-    color: #ffffff;
-    font-size: 3rem;
-    text-shadow: 0px 3px 16px #000000;
-    text-align: center;
-    font-weight: bold;
-}
 .heroContact h2{
     color: #ffffff;
     font-size: 3rem;
@@ -121,10 +131,7 @@ h1{
     font-weight: bold;
 }
 
-footer h3{
-  font-weight: bold;
-  text-transform: uppercase;
-}
+/* slug */
 
 .hero img {
     max-height: 500px;
@@ -145,15 +152,8 @@ footer h3{
   flex-direction: column;
 }
 
-.footerDescription{
-  max-width: 392px;
-}
-.footerDescription1{
-  max-width: 392px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+/* contact */
+
 
 .contactMain{
   display: flex;
@@ -162,8 +162,6 @@ footer h3{
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
 
 .contactForm{
   display: flex;
@@ -217,6 +215,7 @@ input{
   height: 300px;
 }
 
+
 .home{
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -225,6 +224,7 @@ input{
     justify-content: center;
 }
 
+/* card */
 
 .card {
   position: relative; /* Ajout d'une position relative */
@@ -271,7 +271,7 @@ figcaption {
   object-fit: cover;
 }
 
-
+/* slug */
 .slugMain{
   display: flex;
   flex-wrap: wrap;
@@ -285,6 +285,8 @@ figcaption {
 hr {
   color: #1c1c1c;
 }
+
+
 
 .slug img{
   width: 100%;

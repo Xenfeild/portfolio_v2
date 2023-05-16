@@ -17,7 +17,7 @@ export default function Home({posts}) {
         <Layout>
           <div className='hero'>
             <div className='welcome'>
-              <h2 className=''>Portfolio Antonio Torres</h2>
+              <h1 className=''>Portfolio Antonio Torres</h1>
             </div>
           </div>
           <div className='home'>
