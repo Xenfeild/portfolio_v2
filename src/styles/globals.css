@@ -17,13 +17,13 @@
 header {
   display: flex;
   justify-content: space-between;
-  color: #000;
+  color: #ffffff;
   align-items: center;
   position: sticky;
   z-index: 2;
   height: 100px;
   top: 0;
-  background-color: #fff;
+  background-color: #17171735;
 }
 
 .navbar ul {
@@ -95,7 +95,7 @@ footer h3{
 /* main page */
 
 .hero{
-  background-image: url(/img/pexels-photo-7172094.jpeg);
+  background-image: url(/img/coding-hero.jpg);
   background-size: cover;
   height: 500px;
   display: flex;
@@ -121,6 +121,10 @@ h1{
   text-shadow: 0px 3px 7px #000000;
 }
 
+body{
+  background-color: #171717;
+  color: #fff;
+}
 
 .heroContact h2{
     color: #ffffff;
@@ -141,7 +145,7 @@ h1{
 }
 
 .technicalSheet{
-  background-color: #939393;
+  background-color: #1111113f;
   display: flex;
   flex-wrap: wrap;
 }
@@ -196,7 +200,7 @@ span{
   flex-direction: column;
 }
 .contactButton button{
-  background-color: #1c1c1c;
+  background-color: #777777;
   margin: 1rem;
   color: #fff;
   padding-top: 1rem;
@@ -235,6 +239,7 @@ input{
   margin: .2rem;
   align-items: center;
   transition: transform 0.3s ease-in-out;
+  color: #fff;
 }
 
 .card:hover {
@@ -279,7 +284,7 @@ figcaption {
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 5rem;
-  background-color: #d6d6d6;
+  background-color: #1f1f1f;
 }
 
 hr {
