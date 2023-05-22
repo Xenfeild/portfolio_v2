@@ -14,7 +14,7 @@ export default function contact() {
                         <h2>Contact</h2>
                         <p>Vous n'êtes <span>pas encore client</span> et vous rêvez d'un <span>site web créatif et responsive?</span>
                         </p>
-                        <p>Même <span>confinées,</span> je vous <span>répondond rapidement !</span></p>
+                        <p>N'hésitez pas à me contacter</p>
                         <br />
                         <p><span>10 rue jacques brel 27940 Aubvoye</span></p>
                         <div className='contactButton'>

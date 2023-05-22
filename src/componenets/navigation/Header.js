@@ -6,12 +6,13 @@ export default function Header() {
   return (
     <header className=''>
         <div className='logo content'>
-          <img src="/img/Logo_V1.png" alt="" />
+          <img src="/img/Logo_V1_white-removebg.png" alt="" />
         </div>
         <div className='navbar content'>
           <ul>
             <Link href="/">
               <li>Home</li>
+  
             </Link>
               <li> | </li>
             <Link href="/contact">
