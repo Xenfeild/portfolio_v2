@@ -17,7 +17,7 @@ export default function Home({posts}) {
         <Layout>
           <section className='hero'>
             <div className='welcome'>
-              <h1 className=''>Antonio Torres Web-develloper</h1>
+              <h1 className=''>Antonio Torres Web-devellopeur</h1>
             </div>
           </section>
           <section className='skill'>
