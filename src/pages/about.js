@@ -27,6 +27,12 @@ export default function about({posts}) {
               <h2 className=''>About</h2>
             </div>
           </section>
+          <section className='about'>
+            <div>
+              <img src="" alt="" />
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum vel laborum ipsam voluptates optio quidem porro? Libero iste, aspernatur mollitia eos, amet perspiciatis voluptate ea sed voluptatem, officiis quis aut?</p>
+          </section>
           <section className='skill'>
             <h2>Compétences</h2>
             <div className='skills'>
@@ -59,7 +65,8 @@ export default function about({posts}) {
                 <p>React JS</p>
               </div>
             </div>
-            <input type="button" value="test download" onClick={handleDownload}/>
+            <button onClick={handleDownload}>Télécharger le cv</button>
+            {/* <input type="button" value="test download" onClick={handleDownload} className='downloadBtn'/> */}
           </section>
         </Layout>
     </main>
