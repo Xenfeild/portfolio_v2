@@ -17,40 +17,7 @@ export default function Home({posts}) {
         <Layout>
           <section className='hero'>
             <div className='welcome'>
-              <h1 className=''>Antonio Torres Web-devellopeur</h1>
-            </div>
-          </section>
-          <section className='skill'>
-            <h2>Compétences</h2>
-            <div className='skills'>
-              <div>
-                <img src="/img/html.png" alt="html" />
-                <p>HTML 5</p>
-              </div>
-              <div>
-                <img src="/img/css.png" alt="css" />
-                <p>CSS</p>
-              </div>
-              <div>
-                <img src="/img/javascript.png" alt="javascript" />
-                <p>JavaScript</p>
-              </div>
-              <div>
-                <img src="/img/php.png" alt="php" />
-                <p>PHP</p>
-              </div>
-              <div>
-                <img src="/img/wordpress.png" alt="wordpress" />
-                <p>WordPress</p>
-              </div>
-              <div>
-                <img src="/img/symfony.png" alt="symfony" />
-                <p>Symfony</p>
-              </div>
-              <div>
-                <img src="/img/react.png" alt="react" />
-                <p>React JS</p>
-              </div>
+              <h1 className=''>Antonio Torres Web-developpeur</h1>
             </div>
           </section>
           <section className='project'>
