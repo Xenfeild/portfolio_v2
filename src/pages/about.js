@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter, Montserrat,  } from 'next/font/google'
+import CardAbout from '@/componenets/cards/CardAbout';
 import Layout from '@/componenets/Layout';
 import { createClient } from 'contentful';
 import Link from 'next/link';
@@ -12,12 +13,7 @@ const montserrat = Montserrat ({ weight: ["300","400", "500", "900"],
   
 export default function about({posts}) {
   console.log(posts)
-    const handleDownload = () => {
-    const downloadLink = document.createElement('a');
-    downloadLink.href = '/img/Astro2.jpg';
-    downloadLink.setAttribute('download', 'Astro2.jpg');
-    downloadLink.click();
-  };
+
   return (
     <main
       className="">
@@ -27,12 +23,7 @@ export default function about({posts}) {
               <h2 className=''>About</h2>
             </div>
           </section>
-          <section className='about'>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum vel laborum ipsam voluptates optio quidem porro? Libero iste, aspernatur mollitia eos, amet perspiciatis voluptate ea sed voluptatem, officiis quis aut?</p>
-          </section>
+          <CardAbout/>
           <section className='skill'>
             <h2>Compétences</h2>
             <div className='skills'>
@@ -65,7 +56,7 @@ export default function about({posts}) {
                 <p>React JS</p>
               </div>
             </div>
-            <button onClick={handleDownload}>Télécharger le cv</button>
+           
             {/* <input type="button" value="test download" onClick={handleDownload} className='downloadBtn'/> */}
           </section>
         </Layout>

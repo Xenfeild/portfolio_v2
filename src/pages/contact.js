@@ -54,9 +54,6 @@ export default function Contact() {
               <p>
                 vous souahitez profiter de mes services 
               </p>
-              <p>
-                n'hésitez pas à me faire un mail via ce formulaire
-              </p>
               <p>N'hésitez pas à me contacter</p>
               <br />
               <p>

@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import { Inter, Montserrat,  } from 'next/font/google'
+import { Inter, Montserrat,Kanit  } from 'next/font/google'
 import Layout from '@/componenets/Layout';
 import { createClient } from 'contentful';
 import Link from 'next/link';
 import Card from '@/componenets/cards/Card';
 
 // const inter = Inter({ subsets: ['latin'] })
-const montserrat = Montserrat ({ weight: ["300","400", "500", "900"],
+const kanit = Kanit ({ weight: ["300","400", "500", "900"],
   subsets:["latin"],});
 
 export default function Home({posts}) {
