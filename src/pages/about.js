@@ -6,6 +6,7 @@ import { createClient } from 'contentful';
 import Link from 'next/link';
 import Card from '@/componenets/cards/Card';
 
+
 // const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat ({ weight: ["300","400", "500", "900"],
   subsets:["latin"],});
@@ -20,7 +21,7 @@ export default function about({posts}) {
         <Layout>
           <section className='hero'>
             <div className='welcome'>
-              <h2 className=''>About</h2>
+              <h2 className=''>A Propos</h2>
             </div>
           </section>
           <CardAbout/>
@@ -56,7 +57,6 @@ export default function about({posts}) {
                 <p>React JS</p>
               </div>
             </div>
-           
             {/* <input type="button" value="test download" onClick={handleDownload} className='downloadBtn'/> */}
           </section>
         </Layout>

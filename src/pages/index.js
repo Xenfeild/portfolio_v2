@@ -5,6 +5,7 @@ import { createClient } from 'contentful';
 import Link from 'next/link';
 import Card from '@/componenets/cards/Card';
 
+
 // const inter = Inter({ subsets: ['latin'] })
 const kanit = Kanit ({ weight: ["300","400", "500", "900"],
   subsets:["latin"],});
@@ -20,6 +21,7 @@ export default function Home({posts}) {
               <h1 className=''>Antonio Torres Web-developpeur</h1>
             </div>
           </section>
+          <about/>
           <section className='project'>
             <h2>Mes Projets</h2>
             <div className='home'>
