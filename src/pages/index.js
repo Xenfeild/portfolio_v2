@@ -18,7 +18,7 @@ export default function Home({posts}) {
         <Layout>
           <section className='hero'>
             <div className='welcome'>
-              <h1 className=''>Antonio Torres Web-developpeur</h1>
+              <h1 className=''>Porfolio Antonio Torres</h1>
             </div>
           </section>
           <about/>
